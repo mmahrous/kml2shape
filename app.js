@@ -20,7 +20,6 @@ parseString(fileData, function (err, result) {
 		shapeFileData.push(shapeData); //pushing it to array
 	}
 });
-//console.dir(shapeFileData);
 //create a directory with the time stamp in result folder
 var timpstamp = new Date();
 fs.mkdir('./result/'+timpstamp, function(err) {
