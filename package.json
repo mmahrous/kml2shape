@@ -1,0 +1,27 @@
+{
+  "name": "kml2shape",
+  "version": "1.0.0",
+  "description": "It is a script to convert kml files to shapes.txt file for GTFS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmahrous/kml2shape.git"
+  },
+  "keywords": [
+    "kml",
+    "shapefile",
+    "gtfs"
+  ],
+  "author": "M.Mahrous <m.mahrous.94@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmahrous/kml2shape/issues"
+  },
+  "homepage": "https://github.com/mmahrous/kml2shape",
+  "dependencies": {
+    "xml2js": "^0.4.13"
+  }
+}
