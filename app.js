@@ -25,14 +25,14 @@ parseString(fileData, function (err, result) {
 	}
 });
 //create a directory with the time stamp in result folder
-var timpstamp = new Date();
-fs.mkdir('./result/'+timpstamp, function(err) {
+var timestamp = new Date();
+fs.mkdir('./result/'+timestamp, function(err) {
   	if (err) {
 		console.log(err);
 	};
 });
 // writing the first line to the file
-fs.appendFile('./result/'+timpstamp+'/shapes.txt', line + "\n", function (err) {
+fs.appendFile('./result/'+timestamp+'/shapes.txt', line + "\n", function (err) {
 	if (err) {
 		console.log(err);
 	};
@@ -48,7 +48,7 @@ for(var x in shapeFileData){
 	}
 		// write to the file
 	if (lines != "") {
-		fs.appendFile('./result/'+timpstamp+'/shapes.txt', lines, function (err) {
+		fs.appendFile('./result/'+timestamp+'/shapes.txt', lines, function (err) {
 			if (err) {
 				console.log(err);
 				lines = "";
